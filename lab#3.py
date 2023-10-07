@@ -37,7 +37,7 @@ else:
         print(figure + " на клетке " + "(" + str(k) + "," + str(l) + ")" + " не угрожает фигуре на клетке " + "(" + str(m) + "," + str(n) + ")")
         if figure == "Слон" and colB == 0 and colW == 0:
             print("Слон никак не сможет прийти в клетку " + "(" + str(m) + "," + str(n) + ")" )
-        elif figure == "слон":
+        elif figure == "Слон":
             if (k + x // 2 <= 8) and (l + x // 2 <= 8):
                 k2 += x // 2; l2 += x // 2
             elif (k + x // 2 > 8) and (l + x // 2 > 8):
@@ -47,7 +47,7 @@ else:
             elif (k + x // 2 > 8) and (l + x // 2 <= 8):
                 k2 -= x // 2; l2 += x // 2
             print(figure + " при переходе с клетки " + "(" + str(k) + "," + str(l) + ")" + " на клетку " + "(" + str(k2) + "," + str(l2) + ")" + " угрожает клетке " + "(" + str(m) + "," + str(n) + ")")
-        elif figure == "ладья" or figure == "ферзь":
+        elif figure == "Ладья" or figure == "Ферзь":
             if k > m:
                 k2 -= k - m
             elif k < m:
